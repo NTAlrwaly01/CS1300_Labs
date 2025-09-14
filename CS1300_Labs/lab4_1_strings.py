@@ -32,3 +32,19 @@ print("My string 2:", my_string2)
 my_name = "Nawaf T Alrwaly"
 print("My name:", my_name)
 
+# ----------------- Exercise 1.2: String Length -----------------
+print("\n--- Exercise 1.2: String Length ---")
+
+# Built-in len() function
+word1 = "Python"
+word2 = "Data Science"
+word3 = "   Spaces   "
+
+print(f"Length of '{word1}':", len(word1))
+print(f"Length of '{word2}':", len(word2))
+print(f"Length of '{word3}':", len(word3))  # counts spaces too
+
+# Task: Try with your own name
+my_name = "Nawaf T Alrwaly"
+print(f"Length of my name ('{my_name}'):", len(my_name))
+
