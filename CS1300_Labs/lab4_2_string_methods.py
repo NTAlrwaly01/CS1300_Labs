@@ -129,3 +129,79 @@ print("'Hello World' alphanumeric?", test3)
 # Is input4 all uppercase?
 test4 = input4.isupper()
 print("'ALLCAPS' all uppercase?", test4)
+
+
+# ================================
+# Part 3: Finding and Counting
+# ================================
+
+# -------------------------------
+# Exercise 3.1: Finding Substrings
+# -------------------------------
+
+text = "Python is awesome. Python is fun."
+
+# Find first occurrence of "Python"
+first_python = text.find("Python")
+print("First 'Python' at position:", first_python)
+
+# Find "is"
+first_is = text.find("is")
+print("First 'is' at position:", first_is)
+
+# YOUR TURN: Find these
+# Find "awesome"
+pos_awesome = text.find("awesome")
+print("'awesome' at position:", pos_awesome)
+
+# Find "fun"
+pos_fun = text.find("fun")
+print("'fun' at position:", pos_fun)
+
+# Find something that doesn't exist
+pos_java = text.find("Java")
+print("'Java' at position:", pos_java)  # Should be -1
+
+# Count occurrences
+count_python = text.count("Python")
+print("\n'Python' appears:", count_python, "times")
+
+# YOUR TURN: Count these
+count_is = text.count("is")
+print("'is' appears:", count_is, "times")
+
+count_spaces = text.count(" ")
+print("Spaces appear:", count_spaces, "times")
+
+
+# -------------------------------
+# Exercise 3.2: Checking Start and End
+# -------------------------------
+
+filename = "document.pdf"
+website = "https://www.example.com"
+email = "student@university.edu"
+
+# Check file extension
+is_pdf = filename.endswith(".pdf")
+print("\nIs PDF?", is_pdf)
+
+is_txt = filename.endswith(".txt")
+print("Is TXT?", is_txt)
+
+# YOUR TURN: Complete these checks
+# Check if website starts with "https"
+is_secure = website.startswith("https")
+print("Is secure website?", is_secure)
+
+# Check if website ends with ".com"
+is_com = website.endswith(".com")
+print("Is .com website?", is_com)
+
+# Check if email ends with ".edu"
+is_edu_email = email.endswith(".edu")
+print("Is educational email?", is_edu_email)
+
+# Check if email starts with "student"
+is_student = email.startswith("student")
+print("Is student email?", is_student)
