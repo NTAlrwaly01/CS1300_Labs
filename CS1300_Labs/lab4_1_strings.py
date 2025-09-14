@@ -247,3 +247,156 @@ print("Name reversed:", name_reversed)
 
 # ----------------- Exercise 4.1: Joining Strings -----------------
 
+# Using + to join strings
+first = "Python"
+second = "Programming"
+combined = first + " " + second
+print("Combined:", combined)
+
+
+# Building strings piece by piece
+greeting = "Hello"
+name = "Alice"
+message = greeting + ", " + name + "!"
+print("Message:", message)
+
+
+# Task: Create these strings
+word1 = "Data"
+word2 = "Science"
+
+# Create "Data Science"
+phrase1 = word1 + " " + word2
+print("Phrase 1:", phrase1)
+
+
+# Create "DataScience" (no space)
+phrase2 = word1 + word2
+print("Phrase 2:", phrase2)
+
+
+# Create a sentence
+subject = "I"
+verb = "love"
+object = "Python"
+sentence = subject + " " + verb + " " + object + "!"
+print("Sentence:", sentence)
+
+
+# Create an email address
+username = "student"
+domain = "university.edu"
+email = username + "@" + domain
+print("Email:", email)
+
+
+# ----------------- Exercise 4.2: String Repetition -----------------
+
+# Using * to repeat strings
+star = "*"
+line = star * 20
+print("Line of stars:", line)
+
+dash = "-"
+separator = dash * 30
+print("Separator:", separator)
+
+
+# Task: Create these patterns
+
+# Create 10 equals signs
+equals = "=" * 10
+print("Equals:", equals)
+
+# Create "HoHoHo"
+ho = "Ho" * 3
+print("Ho pattern:", ho)
+
+# Create a border: "+--------+"
+plus = "+"
+minus = "-" * 8
+border = plus + minus + plus
+print("Border:", border)
+
+# Create "ABABAB"
+ab = "AB"
+pattern = ab * 3
+print("AB pattern:", pattern)
+
+# Create 5 copies of your initials
+my_name = "Nawaf"  
+first_initial = my_name[0]
+space = " "
+initials_repeated = (first_initial + space) * 5
+print("Initials:", initials_repeated)
+
+
+# ----------------- 5.1: Checking Membership -----------------
+
+sentence = "Python is a powerful programming language"
+
+# Check if words/letters are in the sentence
+has_python = "Python" in sentence
+has_java = "Java" in sentence
+has_space = " " in sentence
+print("Contains 'Python'?", has_python)
+print("Contains 'Java'?", has_java)
+print("Contains spaces?", has_space)
+
+# Check if something is NOT in string
+no_numbers = "0" not in sentence
+print("No zeros?", no_numbers)
+
+
+# Task: Check these
+has_powerful = "powerful" in sentence
+print("Contains 'powerful'?", has_powerful)
+
+has_Program = "Program" in sentence  # Note capital P
+print("Contains 'Program'?", has_Program)
+
+has_gram = "gram" in sentence
+print("Contains 'gram'?", has_gram)
+
+no_exclamation = "!" not in sentence
+print("No exclamation?", no_exclamation)
+
+# Check in your name
+my_name = "Nawaf"  
+has_a = "a" in my_name.lower()
+print("Your name has 'a'?", has_a)
+
+
+# -----------------  5.2: String Comparison -----------------
+
+# Strings are compared alphabetically
+str1 = "apple"
+str2 = "banana"
+comparison1 = str1 < str2
+print("'apple' < 'banana'?", comparison1)
+
+# Case matters in comparison!
+str3 = "Apple"
+str4 = "apple"
+comparison2 = str3 < str4
+print("'Apple' < 'apple'?", comparison2)
+
+
+# Task: Predict these comparisons
+result1 = "cat" > "dog"
+print("'cat' > 'dog'?", result1)
+
+result2 = "10" < "2"  # Comparing as strings, not numbers!
+print("'10' < '2'?", result2)
+
+result3 = "Hello" == "hello"
+print("'Hello' == 'hello'?", result3)
+
+result4 = "abc" < "abcd"
+print("'abc' < 'abcd'?", result4)
+
+result5 = "" < "a"
+print("Empty string < 'a'?", result5)
+
+
+# -----------------  6.1: Extract Information -----------------
