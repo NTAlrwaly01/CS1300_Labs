@@ -205,3 +205,223 @@ print("Is educational email?", is_edu_email)
 # Check if email starts with "student"
 is_student = email.startswith("student")
 print("Is student email?", is_student)
+
+
+# ================================
+# Part 4: Modifying Strings
+# ================================
+
+# -------------------------------
+# Exercise 4.1: Removing Whitespace
+# -------------------------------
+
+# Text with extra spaces
+messy_text = " Hello World "
+print("Original:", repr(messy_text))  # repr shows spaces clearly
+
+# Remove spaces from both ends
+cleaned = messy_text.strip()
+print("Cleaned:", repr(cleaned))
+
+# Remove from left only
+left_cleaned = messy_text.lstrip()
+print("Left cleaned:", repr(left_cleaned))
+
+# Remove from right only
+right_cleaned = messy_text.rstrip()
+print("Right cleaned:", repr(right_cleaned))
+
+# YOUR TURN: Clean these strings
+text1 = " Python "
+text2 = "\nHello\n"
+text3 = "\t\tData\t\t"  # \n is newline, \t is tab
+
+clean1 = text1.strip()
+print("\nCleaned text1:", repr(clean1))
+
+clean2 = text2.strip()
+print("Cleaned text2:", repr(clean2))
+
+clean3 = text3.strip()
+print("Cleaned text3:", repr(clean3))
+
+
+# -------------------------------
+# Exercise 4.2: Replacing Text
+# -------------------------------
+
+sentence = "I like apples. Apples are healthy."
+
+# Replace "apples" with "oranges"
+new_sentence = sentence.replace("apples", "oranges")
+print("\nModified:", new_sentence)
+
+# Note: "Apples" wasn't replaced (case sensitive!)
+# Replace both
+fixed = sentence.replace("apples", "oranges").replace("Apples", "Oranges")
+print("Fully fixed:", fixed)
+
+# YOUR TURN: Make these replacements
+text = "Hello World. World is beautiful."
+
+# Replace "World" with "Python"
+result1 = text.replace("World", "Python")
+print("\nResult 1:", result1)
+
+# Remove all spaces (replace with empty string)
+result2 = text.replace(" ", "")
+print("Result 2:", result2)
+
+# Replace periods with exclamation marks
+result3 = text.replace(".", "!")
+print("Result 3:", result3)
+
+
+# ================================
+# Part 5: Splitting and Joining
+# ================================
+
+# -------------------------------
+# Exercise 5.1: Splitting Strings
+# -------------------------------
+
+# Split sentence into words
+sentence = "Python is a great language"
+words = sentence.split()
+print("Words:", words)
+print("Number of words:", len(words))
+print("First word:", words[0])
+print("Last word:", words[-1])
+
+# Split with specific separator
+data = "apple,banana,orange"
+fruits = data.split(",")
+print("\nFruits:", fruits)
+
+# YOUR TURN: Split these strings
+email = "john.doe@example.com"
+# Split at the @ symbol
+email_parts = email.split("@")
+print("\nEmail parts:", email_parts)
+
+date = "2025-09-11"
+# Split at the dash
+date_parts = date.split("-")
+print("Date parts:", date_parts)
+
+path = "folder/subfolder/file.txt"
+# Split at the forward slash
+path_parts = path.split("/")
+print("Path parts:", path_parts)
+
+
+# -------------------------------
+# Exercise 5.2: Joining Strings
+# -------------------------------
+
+# Join list of words into string
+words = ["Python", "is", "awesome"]
+sentence = " ".join(words)
+print("\nSentence:", sentence)
+
+# Join with different separators
+items = ["apple", "banana", "orange"]
+comma_list = ", ".join(items)
+print("Comma list:", comma_list)
+
+# YOUR TURN: Create these joined strings
+names = ["John", "Jane", "Bob"]
+
+# Join with " and "
+result1 = " and ".join(names)
+print("\nResult 1:", result1)
+
+# Join with " - "
+result2 = " - ".join(names)
+print("Result 2:", result2)
+
+# Join with no separator
+result3 = "".join(names)
+print("Result 3:", result3)
+
+# Create a path from parts
+folders = ["home", "user", "documents"]
+path = "/".join(folders)
+print("Path:", path)
+
+
+# ================================
+# Part 6: Putting It All Together
+# ================================
+
+# -------------------------------
+# Exercise 6.1: Clean and Format Text
+# -------------------------------
+
+# Messy input
+user_input = " hELLo WoRLd "
+
+# Step 1: Remove extra spaces
+step1 = user_input.strip()
+print("Step 1 (stripped):", step1)
+
+# Step 2: Convert to lowercase
+step2 = step1.lower()
+print("Step 2 (lowercase):", step2)
+
+# Step 3: Capitalize first letter
+step3 = step2.capitalize()
+print("Step 3 (capitalized):", step3)
+
+# All in one line
+cleaned = user_input.strip().lower().capitalize()
+print("All at once:", cleaned)
+
+# YOUR TURN: Clean this text
+messy = " pYTHon PROgramming "
+
+# Step 1: Strip spaces
+clean1 = messy.strip()
+
+# Step 2: Convert to title case
+clean2 = clean1.title()
+print("\nCleaned:", clean2)
+
+# Do it in one line
+one_line = messy.strip().title()
+print("One line:", one_line)
+
+
+# -------------------------------
+# Exercise 6.2: Process User Data
+# -------------------------------
+
+# Process a name
+raw_name = " JOHN DOE "
+
+# Clean and format
+name = raw_name.strip().title()
+print("\nFormatted name:", name)
+
+# Create username (lowercase, no spaces)
+username = name.lower().replace(" ", "")
+print("Username:", username)
+
+# Create email
+email = username + "@company.com"
+print("Email:", email)
+
+# YOUR TURN: Process this data
+raw_data = " jaNE SMITH "
+
+# Format the name properly
+formatted_name = raw_data.strip().title()
+print("\nFormatted:", formatted_name)
+
+# Create username (lowercase, replace space with dot)
+user = formatted_name.lower().replace(" ", ".")
+print("Username:", user)
+
+# Check if it contains "smith"
+has_smith = "smith" in user.lower()
+print("Contains 'smith'?", has_smith)
