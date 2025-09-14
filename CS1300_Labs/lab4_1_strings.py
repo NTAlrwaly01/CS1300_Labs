@@ -19,7 +19,7 @@ print("String 1:", string1)
 print("String 2:", string2)
 print("String 3:", string3)
 
-# YOUR TURN: Create these strings
+# Task: Create these strings
 # String with apostrophe
 my_string1 = "It's a nice day"
 print("My string 1:", my_string1)
@@ -31,3 +31,4 @@ print("My string 2:", my_string2)
 # My name
 my_name = "Nawaf T Alrwaly"
 print("My name:", my_name)
+
