@@ -400,3 +400,81 @@ print("Empty string < 'a'?", result5)
 
 
 # -----------------  6.1: Extract Information -----------------
+
+# Extract parts from formatted data
+
+# Phone number
+phone = "123-456-7890"
+area_code = phone[0:3]
+prefix = phone[4:7]
+line_number = phone[8:12]
+
+print("Phone:", phone)
+print("Area code:", area_code)
+print("Prefix:", prefix)
+print("Line number:", line_number)
+
+
+# Task: Extract from email
+email_address = "john.doe@example.com"
+
+# Get username (before @) - hint: @ is at index 8
+username = email_address[:8]
+print("Username:", username)
+
+# Get domain (after @)
+domain = email_address[9:]
+print("Domain:", domain)
+
+# Get just "example" (indices 9-16)
+company = email_address[9:16]
+print("Company:", company)
+
+
+# Date extraction
+date = "2025/09/08"
+year = date[0:4]
+month = date[5:7]
+day = date[8:10]
+print("Date parts:", year, month, day)
+
+
+# ----------------- 6.2: Build Formatted Strings -----------------
+
+# Create formatted output
+
+# Create a title with decoration
+title = "WELCOME"
+decoration = "*" * len(title)
+formatted_title = decoration + "\n" + title + "\n" + decoration
+print(formatted_title)
+
+
+# Task: Create formatted strings
+
+# Create underlined text
+heading = "Important Notice"
+underline = "-" * len(heading)
+formatted_heading = heading + "\n" + underline
+print("\n" + formatted_heading)
+
+
+# Create a box around text
+text = "Hello"
+text_length = len(text)
+top_border = "+" + "-" * (text_length + 2) + "+"
+middle = "| " + text + " |"
+bottom_border = top_border  # Same as top
+box = top_border + "\n" + middle + "\n" + bottom_border
+print("\n" + box)
+
+
+# Create centered text (simple version)
+content = "Python"
+total_width = 20
+content_length = len(content)
+spaces_needed = total_width - content_length
+left_spaces = spaces_needed // 2
+right_spaces = spaces_needed - left_spaces
+centered = " " * left_spaces + content + " " * right_spaces
+print("\nCentered: |" + centered + "|")
