@@ -120,3 +120,130 @@ text_length = len(text)
 middle_index = text_length // 2  # Integer division
 middle = text[middle_index]
 print("Middle of 'Programming':", middle)
+
+
+
+# ----------------- Exercise 3.1: Basic Slicing -----------------
+
+message = "Python Programming"
+
+# Get "Python" (indices 0-5)
+first_word = message[0:6]
+print("First word:", first_word)
+
+
+# Get "Programming" (indices 7-end)
+second_word = message[7:18]
+print("Second word:", second_word)
+
+
+# Task: Extract these substrings
+
+# Get "Prog" from message
+prog = message[7:11]
+print("Prog:", prog)
+
+
+# Get "gram" from message
+gram = message[10:14]
+print("gram:", gram)
+
+
+# Get "Python Prog" (first 11 characters)
+first_part = message[0:11]
+print("First part:", first_part)
+
+
+# Get "ming" (last 4 characters)
+last_part = message[14:18]
+print("Last part:", last_part)
+
+
+
+# ----------------- Exercise 3.2: Slicing Shortcuts -----------------
+
+text = "Hello World"
+
+# Shortcuts for common slices
+from_start = text[:5]
+print("First 5:", from_start)  # First 5 characters
+
+
+to_end = text[6:]
+print("From index 6:", to_end)  # From index 6 to end
+
+
+copy_all = text[:]
+print("Full copy:", copy_all)  # Copy entire string
+
+
+# Task: Use shortcuts
+
+# Get first 3 characters of text
+first_three = text[:3]
+print("First three:", first_three)
+
+
+# Get last 5 characters of text
+last_five = text[-5:]
+print("Last five:", last_five)
+
+
+# Skip first and last character
+middle = text[1:-1]
+print("Middle part:", middle)
+
+
+# Get everything except last 3 characters
+except_last = text[:-3]
+print("Except last 3:", except_last)
+
+
+
+
+# ----------------- Exercise 3.3: Slicing with Steps -----------------
+
+numbers = "0123456789"
+
+# Every second character
+every_second = numbers[::2]
+print("Every second:", every_second)
+
+
+# Every third character
+every_third = numbers[::3]
+print("Every third:", every_third)
+
+
+# Reverse the string
+reversed_nums = numbers[::-1]
+print("Reversed:", reversed_nums)
+
+
+# Task: Create these slices
+alphabet = "abcdefghijklmnop"
+
+# Get every second letter starting from 'a'
+pattern1 = alphabet[::2]
+print("Pattern 1:", pattern1)  # Should be "acegikmo"
+
+
+# Get every second letter starting from 'b'
+pattern2 = alphabet[1::2]
+print("Pattern 2:", pattern2)  # Should be "bdfhjlnp"
+
+
+# Get last 5 characters reversed
+last_reversed = alphabet[-1:-6:-1]
+print("Last 5 reversed:", last_reversed)  # Should be "ponml"
+
+
+# Reverse your name
+my_name = "Nawaf T Alrwaly"
+name_reversed = my_name[::-1]
+print("Name reversed:", name_reversed)
+
+
+
+# ----------------- Exercise 4.1: Joining Strings -----------------
+
