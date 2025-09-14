@@ -86,7 +86,7 @@ string5 = ""
 print("'Hello' all letters?", string1.isalpha())
 print("'12345' all letters?", string2.isalpha())
 
-# YOUR TURN: Complete these tests
+# Task: Complete these tests
 print("'12345' all digits?", string2.isdigit())
 print("'Hello123' all letters?", string3.isalpha())
 print("'Hello123' letters or digits?", string3.isalnum())
@@ -113,7 +113,7 @@ input2 = "123"
 input3 = "Hello World"
 input4 = "ALLCAPS"
 
-# YOUR TURN: Test these inputs
+# Task: Test these inputs
 # Is input1 only letters?
 test1 = input1.isalpha()
 print("'abc123' only letters?", test1)
@@ -149,7 +149,7 @@ print("First 'Python' at position:", first_python)
 first_is = text.find("is")
 print("First 'is' at position:", first_is)
 
-# YOUR TURN: Find these
+# Task: Find these
 # Find "awesome"
 pos_awesome = text.find("awesome")
 print("'awesome' at position:", pos_awesome)
@@ -166,7 +166,7 @@ print("'Java' at position:", pos_java)  # Should be -1
 count_python = text.count("Python")
 print("\n'Python' appears:", count_python, "times")
 
-# YOUR TURN: Count these
+# Task: Count these
 count_is = text.count("is")
 print("'is' appears:", count_is, "times")
 
@@ -189,7 +189,7 @@ print("\nIs PDF?", is_pdf)
 is_txt = filename.endswith(".txt")
 print("Is TXT?", is_txt)
 
-# YOUR TURN: Complete these checks
+# Task: Complete these checks
 # Check if website starts with "https"
 is_secure = website.startswith("https")
 print("Is secure website?", is_secure)
@@ -231,7 +231,7 @@ print("Left cleaned:", repr(left_cleaned))
 right_cleaned = messy_text.rstrip()
 print("Right cleaned:", repr(right_cleaned))
 
-# YOUR TURN: Clean these strings
+# Task: Clean these strings
 text1 = " Python "
 text2 = "\nHello\n"
 text3 = "\t\tData\t\t"  # \n is newline, \t is tab
@@ -261,7 +261,7 @@ print("\nModified:", new_sentence)
 fixed = sentence.replace("apples", "oranges").replace("Apples", "Oranges")
 print("Fully fixed:", fixed)
 
-# YOUR TURN: Make these replacements
+# Task: Make these replacements
 text = "Hello World. World is beautiful."
 
 # Replace "World" with "Python"
@@ -298,7 +298,7 @@ data = "apple,banana,orange"
 fruits = data.split(",")
 print("\nFruits:", fruits)
 
-# YOUR TURN: Split these strings
+# Task: Split these strings
 email = "john.doe@example.com"
 # Split at the @ symbol
 email_parts = email.split("@")
@@ -329,7 +329,7 @@ items = ["apple", "banana", "orange"]
 comma_list = ", ".join(items)
 print("Comma list:", comma_list)
 
-# YOUR TURN: Create these joined strings
+# Task: Create these joined strings
 names = ["John", "Jane", "Bob"]
 
 # Join with " and "
@@ -377,7 +377,7 @@ print("Step 3 (capitalized):", step3)
 cleaned = user_input.strip().lower().capitalize()
 print("All at once:", cleaned)
 
-# YOUR TURN: Clean this text
+# Task: Clean this text
 messy = " pYTHon PROgramming "
 
 # Step 1: Strip spaces
@@ -411,7 +411,7 @@ print("Username:", username)
 email = username + "@company.com"
 print("Email:", email)
 
-# YOUR TURN: Process this data
+# Task: Process this data
 raw_data = " jaNE SMITH "
 
 # Format the name properly
