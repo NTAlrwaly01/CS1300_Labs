@@ -32,19 +32,60 @@ print("My string 2:", my_string2)
 my_name = "Nawaf T Alrwaly"
 print("My name:", my_name)
 
+
 # ----------------- Exercise 1.2: String Length -----------------
-print("\n--- Exercise 1.2: String Length ---")
+# Finding the length of strings
+text1 = "Python"
+length1 = len(text1)
+print("Length of 'Python':", length1)
 
-# Built-in len() function
-word1 = "Python"
-word2 = "Data Science"
-word3 = "   Spaces   "
+text2 = "Hello World"
+length2 = len(text2)
+print("Length of 'Hello World':", length2)
 
-print(f"Length of '{word1}':", len(word1))
-print(f"Length of '{word2}':", len(word2))
-print(f"Length of '{word3}':", len(word3))  # counts spaces too
+# Task: Find lengths
+text3 = "Programming"
+length3 = len(text3)
+print("Length of 'Programming':", length3)
 
-# Task: Try with your own name
-my_name = "Nawaf T Alrwaly"
-print(f"Length of my name ('{my_name}'):", len(my_name))
+# Empty string
+empty = ""
+empty_length = len(empty)
+print("Length of empty string:", empty_length)
+
+# Single space
+space = " "
+space_length = len(space)
+print("Length of single space:", space_length)
+
+# Your name
+name_length = len(my_name)
+print("Length of your name:", name_length)
+
+
+# ----------------- Exercise 2.1: Accessing Characters -----------------
+
+word = "Computer"
+# Positions: C=0, o=1, m=2, p=3, u=4, t=5, e=6, r=7
+
+# Get first character
+first = word[0]
+print("First character:", first)
+
+# Get last character (two ways)
+last_v1 = word[7]
+last_v2 = word[-1]
+print("Last character (method 1):", last_v1)
+print("Last character (method 2):", last_v2)
+
+# Task:
+second_char = word[1]  # Should be 'o'
+print("Second character:", second_char)
+
+middle_char = word[4]  # Should be 'u'
+print("Middle character:", middle_char)
+
+third_from_end = word[-3]  # Should be 't'
+print("Third from end:", third_from_end)
+
 
