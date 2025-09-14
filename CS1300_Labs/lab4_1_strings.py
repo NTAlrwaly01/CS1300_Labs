@@ -89,3 +89,34 @@ third_from_end = word[-3]  # Should be 't'
 print("Third from end:", third_from_end)
 
 
+# ----------------- Exercise 2.2: Working with Indices -----------------
+
+phrase = "Hello World"
+# Remember: space is also a character!
+
+# Find specific characters
+h_char = phrase[0]
+space_char = phrase[5]
+w_char = phrase[6]
+
+print("H is at index 0:", h_char)
+print("Space is at index 5:", space_char)
+print("W is at index 6:", w_char)
+
+# Task: Find these characters
+o_in_hello = phrase[4]  # First 'o' in Hello
+print("First 'o':", o_in_hello)
+
+o_in_world = phrase[7]  # 'o' in World
+print("Second 'o':", o_in_world)
+
+exclamation = "Python!"
+last_char = exclamation[-1]  # Get the '!'
+print("Exclamation:", last_char)
+
+# Calculate middle index
+text = "Programming"
+text_length = len(text)
+middle_index = text_length // 2  # Integer division
+middle = text[middle_index]
+print("Middle of 'Programming':", middle)
