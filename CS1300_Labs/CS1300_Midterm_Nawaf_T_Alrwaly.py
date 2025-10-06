@@ -2,8 +2,7 @@
 CS 1300 - Midterm Examination (Mock)
 Name: Nawaf T. Alrwaly
 Date: October 6, 2025
-Description: Midterm programming problems — String & List Operations
-"""
+Description: Midterm Examination for CS 1300"""
 
 print("="*60)
 print("PART 2: PROGRAMMING EXAMINATION")
