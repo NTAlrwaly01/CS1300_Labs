@@ -162,7 +162,7 @@ def reset_game():
 # TEST CASES 
 
 
-print("\n--- Temperature Converter Tests ---")
+print("\n--- Temperature Converter ---")
 print(celsius_to_fahrenheit(0))     
 print(celsius_to_fahrenheit(100))   
 
@@ -173,7 +173,7 @@ temperature_report(25)
 temperature_report(77, "F")         
 
 
-print("\n--- Grade Calculator Tests ---")
+print("\n--- Grade Calculator ---")
 grade1 = calculate_weighted_grade(85, 78, 92)
 print(f"Grade 1: {grade1}")     
 
@@ -186,7 +186,7 @@ print(f"Grade 2: {grade2}")
 print_grade_report("Alice Smith", 88, 91, 85)
 
 
-print("\n--- Scope Challenge Tests ---")
+print("\n--- Scope Challenge ---")
 reset_game()            # Reset to 0
 add_score(100)          
 add_score(50)           
