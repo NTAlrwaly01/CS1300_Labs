@@ -1,0 +1,26 @@
+Part 1:                 59 out of 60
+Part 2:                 140 out of 50
+Grading Rubrics:
+Problem 1:              25 out of 25
+    Initialize count     5 out of 5 
+    For loop             10 out of 10
+    If statement         5 out of 5
+    count increment      5 out of 5
+
+Problem 2:              35 out of 25
+    If condition:       10 out of 10
+    elif condition      10 out of 10
+    else                5 out of 5
+    count_grade_groups  10 bonus point
+
+Problem 3:              25 out of 25
+    for loop            10 out of 10
+    initialize "" str   5 out of 5
+    reverse string      15 out of 10 -- smart using char + !!
+
+Problem 4:              25 out of 25
+    outer loop          10 out of 10
+    add pattern         15 out of 15
+
+Problem 5:              25 out of 25
+    max w/o built-in    25 out of 25
